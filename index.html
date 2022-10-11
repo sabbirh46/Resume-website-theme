@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="style.css">
+        <title>Resume Website</title>
+    </head>
+<body class="row bg-dark text-light position-relative w-100 vh-100 text-shadow">
+   
+    <!--Navigation-->
+    <nav class="navbar navbar-dark bg-dark vh-100 col-1 d-md-none" style="width:80px ;">
+      <div class="container">
+        <div>
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fs-4">
+              
+                <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Home">
+                    <a href="#" class="nav-link active" aria-current="page"><i class="bi bi-house text-success"></i></a>
+                   </li>
+
+                   <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="About">
+                    <a href="#About" class="nav-link "><i class="bi bi-person "></i></a>
+                   </li>
+
+                   <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Services">
+                    <a href="#Services" class="nav-link "><i class="bi bi-briefcase "></i></a>
+                   </li>
+
+                   <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Contact">
+                    <a href="#Contact" class="nav-link "><i class="bi bi-telephone "></i></a>
+                   </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Header-->
+    <header class="position-relative h-100% col-10 col-md-4" style="background:url(https://source.unsplash.com/SvKJUXV_5cQ) center/cover  no-repeat;"
+    
+    >
+    <div class="position-relative top-50 mt-5 row row-cols-1 text-center">
+     <h2 class="display-2 fw-bolder lh-lg">Joe Man</h2>
+     <h4 class="font-monospace">Developer</h4>
+     <div class="row mt-3 mx-auto">
+           <ul class="row list-unstyled fs-5">
+            <li class="col"><a href=""><i class="bi bi-facebook text-light"></i></a></li>
+            <li class="col"><a href=""><i class="bi bi-github text-light"></i></a></li>
+            <li class="col"><a href=""><i class="bi bi-linkedin text-light"></i></a></li>
+            <li class="col"><a href=""><i class="bi bi-globe text-light"></i></a></li>
+           </ul>
+     </div>
+    </div>
+
+    </header>
+     <!--Main-->
+     <main class="row col-12 col-md-8">
+      <!--Main> About-->
+      <section id="About" class="ms-3">
+       <h2 class="font-monospace mt-4">about me</h2>
+       <div class="row col-12 text-success mt-3">
+                <div class="col">Exp / 10+ Years</div>
+                <div class="col">Location / Berlin</div>
+                <div class="col">Domain / Freelance</div>
+       </div>
+        <p class="text-secondary mt-3">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid dolorem deleniti culpa sit quisquam eaque, corporis harum illo obcaecati officia dicta, animi, cum delectus velit tenetur molestias rerum libero quis?
+        </p>
+         <!--About CV button & content--> 
+
+        <button class="btn btn-outline-success"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#ocAbout"
+        aria-controls="ocAbout"
+        >
+         CV
+        </button>
+       <!-- CV content-->
+       <div class="offcanvas offcanvas-end w-75 bg-dark" tabindex="-1" id="ocAbout">
+        <div class="offcanvas-header">
+          <h5 class="text-success">Resume</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-toggle="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <h4 class="display-4 mb-3">Norbert B. Menyhart</h4>
+          <h4 class="display-6 mb-4 text-white-50"> Full stack web developer</h4>
+          <h4 class="display-6 mb-2 font-monospace">About me</h4>
+          <p class="text-white-50">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nisi iste maxime ullam placeat perspiciatis. Dolorem, voluptatibus in. Cupiditate pariatur blanditiis expedita eum laudantium, aspernatur quo! Maxime eligendi commodi alias?
+          </p>
+          <h4 class="display-6 mb-2 font-monospace">Career objective</h4>
+          <p class="text-white-50">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nisi iste maxime ullam placeat perspiciatis. Dolorem, voluptatibus in. Cupiditate pariatur blanditiis expedita eum laudantium, aspernatur quo! Maxime eligendi commodi alias?
+          </p>
+          <h4 class="display-6 mb-2 font-monospace">Skills <small class="fs-6">(and still growing)</small></h4>
+          <p class="text-white-50">Developing</p>
+          <div class="progress mb-1">
+            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+            role="progressbar" style="width:95% ;"
+            >
+
+            </div>
+          </div>
+          <p class="text-white-50">Troubleshooting </p>
+          <div class="progress mb-1">
+            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width:90% ;">
+
+            </div>
+          </div>
+          <p class="text-white-50">Criticalthinking</p>
+          <div class="progress mb-1">
+            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width:97% ;">
+
+            </div>
+          </div>
+          
+          <p class="text-white-50">Web desining</p>
+          <div class="progress mb-1">
+            <div class="progress-bar bg-success " role="progressbar" style="width:100% ;">
+
+            </div>
+          </div>
+
+          <p class="text-white-50">Active Learning</p>
+          <div class="progress mb-1">
+            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width:86% ;">
+
+            </div>
+          </div>
+        </div>
+
+       </div>
+
+      </section>
+         <!--MAIN > SERVICES-->
+         <section id="Services" class="ms-3">
+          <h2 class="font-monospace mt-4">my service</h2>
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col card bg-transparent">
+              <div class="card-body">
+                <i class="bi bi-display h1 text-success"></i>
+                <h5 class="card-title mt-3">SEO</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, tempora?</p>
+                <button class="btn btn-outline-success w-100"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#oc_seo"
+                aria-controls="oc_seo"
+                >
+                more...
+                </button>
+                <!--sERVICES > SEO OFFCANVAS-->
+                <div class="offcanvas offcanvas-end w-75 bg-dark" tabindex="-1" id="oc_seo">
+                  <div class="offcanvas-header">
+                   <h5 class="text-success">SEO</h5>
+                   <button class="btn-close btn-close-white" type="button" 
+                   data-bs-dismiss="offcanvas"
+                   ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                   <i class="fab fa-searchengin fa-4x mb-4"></i>
+                   
+                   <h4 class="display-5 mb-3">What is SEO?</h4>
+                    <p class="text-white-50 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, obcaecati.</p>
+                    <h4 class="display-5 mb-3">Do you need an SEO expert?</h4>
+                    <p class="text-white-50 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid doloremque dolores quidem molestias sequi ad facere sunt exercitationem ex doloribus.</p>
+                    <h4 class="display-5 mb-3">Our SEO services:</h4>
+                    <ul class="text-white-50 ">
+                      <li>Lorem ipsum dolor sit amet.</li>
+                      <li>Lorem ipsum dolor sit amet consectetur.</li>
+                      <li>Lorem ipsum dolor sit.</li>
+                      <li>Lorem ipsum dolor sit amet.</li>
+                      <li>Lorem ipsum dolor sit.</li>
+                      <li>Lorem ipsum dolor sit amet consectetur.</li>
+                      <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                  </div>
+             </div>
+              </div>
+            </div>
+            <div class="col card bg-transparent">
+              <div class="card-body">
+                <i class="bi bi-display h1 text-success"></i>
+               
+                <h5 class="card-title mt-3">Development</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quae.</p>
+                <button class="btn btn-outline-success w-100"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#oc_dev"
+                aria-controls="oc_dev"
+                >
+                more...
+                </button>
+                <!--sERVICES > dELELOPMENT OFFCANVAS-->
+               <div class="offcanvas offcanvas-end w-75 bg-dark" tabindex="-1" id="oc_dev">
+                   <div class="offcanvas-header">
+                    <h5 class="text-success">Web-Development</h5>
+                    <button class="btn-close btn-close-white" type="button" 
+                    data-bs-dismiss="offcanvas"
+                    ></button>
+                   </div>
+                   <div class="offcanvas-body">
+                    <h4 class="display-4 mb-3">What is a web developer?</h4>
+                    <p class="text-white-50 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid enim quos neque obcaecati odit quis! Non voluptas deserunt praesentium cupiditate illo fugiat quae expedita iusto, obcaecati, aut quidem magnam odit.</p>
+                    <h4 class="display-4 mb-3">What is a front-end web developer?</h4>
+                    <i class="fa-brands fa-html5 fa-3x me-3"></i>
+                    <i class="fa-brands fa-css3-alt fa-3x me-3"></i>
+                    <i class="fa-brands fa-js fa-3x me-3"></i>
+                    <i class="fa-brands fa-bootstrap fa-3x me-3"></i>
+
+                    <p class="text-white-50 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, excepturi. Qui quasi, harum tempora, in repudiandae sapiente enim delectus incidunt excepturi minima accusantium adipisci deserunt corporis totam unde facilis debitis!</p>
+                    <h4 class="display-4 mb-3">What is a back-end web developer?</h4>
+                    <i class="fa-brands fa-js fa-3x me-3"></i>
+                    <i class="fa-brands fa-php fa-3x me-3"></i>
+                    <i class="fa-brands fa-python fa-3x me-3"></i>
+                    <i class="fa-brands fa-node-js fa-3x me-3"></i>
+                    <p class="text-white-50 mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores ducimus perferendis earum! Officiis tempora laborum iste, soluta ipsa fugiat, saepe blanditiis hic repudiandae, doloremque dolorum tempore eum modi corrupti accusamus.</p>
+                   </div>
+              </div>
+              </div>
+            </div>
+            <div class="col card bg-transparent">
+              <div class="card-body">
+                <i class="bi bi-display h1 text-success"></i>
+                <h5 class="card-title mt-3">Database</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, temporibus.</p>
+                <button class="btn btn-outline-success w-100"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#oc_db"
+                aria-controls="oc_db"
+                >
+                more...
+                </button>
+                <!--sERVICES >DATA BASE OFFCANVAS-->
+                <div class="offcanvas offcanvas-end w-75 bg-dark" tabindex="-1" id="oc_db">
+                  <div class="offcanvas-header">
+                   <h5 class="text-success">Database</h5>
+                   <button class="btn-close btn-close-white" type="button" 
+                   data-bs-dismiss="offcanvas"
+                   ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <i class="fas fa-database fa-4x mb-4"></i>
+                   
+                    <h4 class="display-5 mb-3">What is Database?</h4>
+                     <p class="text-white-50 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, obcaecati.</p>
+                     <h4 class="display-5 mb-3">Database management system(DBMS)</h4>
+                     <p class="text-white-50 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid doloremque dolores quidem molestias sequi ad facere sunt exercitationem ex doloribus.</p>
+                     <h4 class="display-5 mb-3">What are the type of database?</h4>
+                     <ul class="text-white-50 ">
+                       <li>Lorem ipsum dolor sit amet.</li>
+                       <li>Lorem ipsum dolor sit amet consectetur.</li>
+                       <li>Lorem ipsum dolor sit.</li>
+                       <li>Lorem ipsum dolor sit amet.</li>
+                       <li>Lorem ipsum dolor sit.</li>
+                       <li>Lorem ipsum dolor sit amet consectetur.</li>
+                       <li>Lorem ipsum dolor sit amet.</li>
+                     </ul>
+                  </div>
+             </div>
+
+              </div>
+            </div>
+            <div class="col card bg-transparent">
+              <div class="card-body">
+                <i class="bi bi-display h1 text-success"></i>
+                <h5 class="card-title mt-3">Data Security</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dignissimos!</p>
+                <button class="btn btn-outline-success w-100"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#oc_ds"
+                aria-controls="oc_ds"
+                >
+                more...
+                </button>
+                 <!--sERVICES > DATA SECURITY OFFCANVAS-->
+                 <div class="offcanvas offcanvas-end w-75 bg-dark" tabindex="-1" id="oc_ds">
+                  <div class="offcanvas-header">
+                   <h5 class="text-success">Data Security</h5>
+                   <button class="btn-close btn-close-white" type="button" 
+                   data-bs-dismiss="offcanvas"
+                   ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <i class="fas fa-shiled fa-4x mb-4"></i>
+                   
+                    <h4 class="display-5 mb-3">What is Datasecurity?</h4>
+                     <p class="text-white-50 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, obcaecati.</p>
+                     <h4 class="display-5 mb-3">What are data security standard(DSS)</h4>
+                     <p class="text-white-50 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid doloremque dolores quidem molestias sequi ad facere sunt exercitationem ex doloribus.</p>
+                     <h4 class="display-5 mb-3">Our offer for DS</h4>
+                     <ul class="list-unstyled">
+                       <li class="mb-2">
+                        <button
+                          type="button"
+                          class="btn btn-outline-success"
+                           data-bs-toggle="collapse"
+                            data-bs-target="#category-1"
+                            aria-expanded="false"
+                             aria-controls="category-1"
+                         >
+                         
+                         category-1
+                        </button>
+                        <div class="collapse" id="category-1">
+                          <div class="card card-body bg-dark text-white-50">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ullam illo similique nesciunt, inventore quasi reprehenderit quo minima molestiae quis!
+                          </div>
+                        </div>
+                       </li>
+                       <li class="mb-2">
+                        <button
+                        type="button"
+                        class="btn btn-outline-success"
+                         data-bs-toggle="collapse"
+                          data-bs-target="#category-2"
+                          aria-expanded="false"
+                           aria-controls="category-2"
+                       >
+                       
+                       category-2
+                      </button>
+                      <div class="collapse" id="category-2">
+                        <div class="card card-body bg-dark text-white-50">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ullam illo similique nesciunt, inventore quasi reprehenderit quo minima molestiae quis!
+                        </div>
+                      </div>
+                       </li>
+                       <li class="mb-2">
+                        <button
+                        type="button"
+                        class="btn btn-outline-success"
+                         data-bs-toggle="collapse"
+                          data-bs-target="#category-3"
+                          aria-expanded="false"
+                           aria-controls="category-3"
+                       >
+                       
+                       category-3
+                      </button>
+                      <div class="collapse" id="category-3">
+                        <div class="card card-body bg-dark text-white-50">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ullam illo similique nesciunt, inventore quasi reprehenderit quo minima molestiae quis!
+                        </div>
+                      </div>
+                       </li>
+                       <li class="mb-2">
+                        <button
+                        type="button"
+                        class="btn btn-outline-success"
+                         data-bs-toggle="collapse"
+                          data-bs-target="#category-4"
+                          aria-expanded="false"
+                           aria-controls="category-4"
+                       >
+                       
+                       category-4
+                      </button>
+                      <div class="collapse" id="category-4">
+                        <div class="card card-body bg-dark text-white-50">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ullam illo similique nesciunt, inventore quasi reprehenderit quo minima molestiae quis!
+                        </div>
+                      </div>
+                       </li>
+                     </ul>
+
+                  </div>
+             </div>
+
+              </div>
+            </div>
+      
+      
+      
+     
+        </div>
+     </section>
+       
+    <!--CONTACT-->
+     <section id="Contact" class="ms-3">
+      <h2 class="font-monospace mt-4">contact me</h2>
+      <ul class="row list-unstyled text-sm-start text-center">
+        <li class="text-success">Menyhart Media LLT</li>
+        <li class="col-6 p-2"><i class="bi bi-geo-alt text-success"></i> 21 jump street 32510 The city</li>
+        <li class="col-6 p-2"><i class="bi bi-telephone text-success"></i> 555-555-555</li>
+        <li class="col-6 p-2"><i class="bi bi-phone text-success"></i> 345-34555-5566</li>
+        <li class="col-6 p-2"><i class="bi bi-envelope text-success"></i> web@gmail.com</li>
+        
+
+      </ul>
+     </section>
+      
+     
+     </main>
+    
+      <!--FOOTER-->
+      <footer class="position-fixed bottom-0 bg-success text-center">
+         <small class="col">&copy;2022 meny hert media. All right reserved</small>
+      </footer>
+     <!--Bootstrap js CDN-->
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<!--Script for tooltips-->
+<script>
+   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+</body>
+</html>
